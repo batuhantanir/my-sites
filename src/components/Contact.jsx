@@ -22,7 +22,7 @@ const Contact = () => {
       </h3>
       <form
         onSubmit={handleSubmit}
-        className="wow flex flex-col border p-6 rounded bg-[#323232] animate__animated animate__flipInX"
+        className="wow flex flex-col shadow-black shadow-lg p-6 rounded   backdrop-blur-lg animate__animated animate__flipInX w-full xl:w-6/12 lg:w-6/12 md:w-8/12 sm:w-10/12"
       >
         <label htmlFor="contact_author">
           <div>*Full Name </div>
@@ -31,7 +31,7 @@ const Contact = () => {
           type="text"
           name="contact_author"
           id="contact_author"
-          className="rounded bg-[#ffffff33] px-1 border-2"
+          className="rounded bg-[#ffffff33] px-1 border-2 sm:w-8/12 md:w-6/12 lg:w-4/12 "
           required
         />
         <label htmlFor="_replyto">
@@ -41,26 +41,26 @@ const Contact = () => {
           type="email"
           name="_replyto"
           id="_replyto"
-          className="rounded bg-[#ffffff33] px-1 border-2"
+          className="rounded bg-[#ffffff33] px-1 border-2 sm:w-8/12 md:w-6/12 lg:w-4/12"
           required
         />
         <label htmlFor="contact_subject">
-          <div>*message</div>
+          <div>*Subject</div>
         </label>
         <input
           type="text"
           name="contact_subject"
           id="contact_subject"
-          className="rounded bg-[#ffffff33] px-1 border-2"
+          className="rounded bg-[#ffffff33] px-1 border-2 sm:w-8/12 md:w-6/12 lg:w-4/12"
           required
         />
         <label htmlFor="contact_content">
-          <div>*İleti</div>
+          <div>*Message</div>
         </label>
         <textarea
           name="contact_content"
           id="contact_content"
-          className="w-96 h-40 rounded bg-[#ffffff33] px-1 border-2"
+          className=" h-40 rounded bg-[#ffffff33] px-1 border-2 "
           style={{ resize: "none" }}
           required
         ></textarea>

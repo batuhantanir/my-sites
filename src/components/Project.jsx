@@ -25,12 +25,15 @@ const Project = () => {
         Projects
       </h3>
       <div className="flex flex-wrap justify-center mt-2  ">
-        {projectsList.map((project) => (
-          <div className="wow flex  items-center justify-center m-2 animate__animated animate__fadeInUp">
+        {projectsList.map((project, idx) => (
+          <div
+            className="wow flex  items-center justify-center m-2 animate__animated animate__fadeInUp"
+            key={idx}
+          >
             <img
               src={project.img}
               alt={project.name}
-              className="border-2 w-96 "
+              className="border-2 w-56 sm:w-72 lg:w-96 "
             />
             <div className="flex flex-col p-4  items-center absolute">
               <div className="relative shadow-black text-shadow shadow-black-500">
